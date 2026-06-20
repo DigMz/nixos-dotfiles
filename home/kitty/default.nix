@@ -4,7 +4,8 @@
   programs.kitty = {
     enable = true;
     font = {
-      size = 16;
+      name = "DejaVuSansMono";
+      size = 14;
     };
   };
 }

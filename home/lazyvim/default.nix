@@ -11,6 +11,8 @@
   programs.lazyvim = {
     enable = true;
 
+    configFiles = ./lazyvim-config;
+
     extras = {
       lang =
         let

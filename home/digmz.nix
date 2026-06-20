@@ -8,6 +8,7 @@
 
 {
   imports = [
+    ./kitty
     ./wayle
     ./rofi
     ./lazyvim
