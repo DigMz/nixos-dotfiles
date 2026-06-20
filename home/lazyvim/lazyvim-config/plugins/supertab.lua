@@ -3,7 +3,10 @@ return {
     "saghen/blink.cmp",
     opts = {
       keymap = {
-        preset = "super-tab",
+        preset = "default",
+
+        ['<Tab>'] = { 'snippet-forward', 'fallback' },
+        ['S-<Tab>'] = { 'snippet-backward', 'fallback' },
       },
     },
   },
