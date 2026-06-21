@@ -104,6 +104,8 @@
     neovim
     wget
     git
+    brightnessctl
+
     gcc
     cargo
     rustc
