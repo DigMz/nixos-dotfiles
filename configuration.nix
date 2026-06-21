@@ -56,6 +56,8 @@
   # };
 
   services = {
+    power-profiles-daemon.enable = true;
+
     # Enable CUPS to print documents.
     printing.enable = true;
 
