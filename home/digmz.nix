@@ -8,6 +8,7 @@
 
 {
   imports = [
+    ./hypr
     ./kitty
     ./wayle
     ./rofi
@@ -25,6 +26,7 @@
     packages =
       with pkgs;
       [
+        mutagen
         nixfmt
         statix
         discord
