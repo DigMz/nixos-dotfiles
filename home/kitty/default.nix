@@ -7,5 +7,8 @@
       name = "DejaVuSansMono";
       size = 14;
     };
+    environment = {
+      "EDITOR" = "nvim";
+    };
   };
 }
