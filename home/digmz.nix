@@ -8,6 +8,7 @@
 
 {
   imports = [
+    ./github-cli
     ./kitty
     ./wayle
     ./rofi
