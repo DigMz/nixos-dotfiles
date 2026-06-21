@@ -40,6 +40,8 @@
   # Configure network connections interactively with nmcli or nmtui.
   networking.networkmanager.enable = true;
 
+  hardware.bluetooth.enable = true;
+
   # Set your time zone.
   time.timeZone = "US/Central";
 
@@ -57,6 +59,8 @@
 
   services = {
     power-profiles-daemon.enable = true;
+    upower.enable = true;
+    blueman.enable = true;
 
     # Enable CUPS to print documents.
     printing.enable = true;
