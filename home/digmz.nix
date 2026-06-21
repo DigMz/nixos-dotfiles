@@ -8,7 +8,6 @@
 
 {
   imports = [
-    ./hypr
     ./kitty
     ./wayle
     ./rofi
