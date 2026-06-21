@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  home.packages = with pkgs; [ mutagen ];
+
   services.wayle = {
     enable = true;
 

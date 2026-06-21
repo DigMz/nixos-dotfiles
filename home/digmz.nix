@@ -26,7 +26,6 @@
     packages =
       with pkgs;
       [
-        mutagen
         nixfmt
         statix
         discord
