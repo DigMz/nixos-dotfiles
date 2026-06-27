@@ -18,8 +18,8 @@
   programs.bash = {
     enable = true;
     sessionVariables = {
-      EDITOR = nvim;
-      BROWSER = zen;
+      EDITOR = "nvim";
+      BROWSER = "zen";
     };
     bashrcExtra = ''
       eval \"$(direnv hook bash)\"
