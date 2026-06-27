@@ -15,18 +15,23 @@
     ./lazyvim
   ];
 
+  programs.bash = {
+    enable = true;
+    sessionVariables = {
+      EDITOR = nvim;
+      BROWSER = zen;
+    };
+    bashrcExtra = ''
+      eval \"$(direnv hook bash)\"
+    '';
+  };
+
   home = {
     stateVersion = "26.05";
 
-    sessionVariables = {
-      EDITOR = "nvim";
-      BROWSER = "zen";
-    };
-
     packages =
       with pkgs;
-      [
-        nixfmt
+      [ nixfmt
         statix
         discord
       ]
