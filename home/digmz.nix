@@ -22,7 +22,7 @@
       BROWSER = "zen";
     };
     bashrcExtra = ''
-      eval \"$(direnv hook bash)\"
+      eval "$(direnv hook bash)"
     '';
   };
 
