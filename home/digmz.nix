@@ -21,13 +21,11 @@
       EDITOR = "nvim";
       BROWSER = "zen";
     };
-    bashrcExtra = ''
-      eval "$(direnv hook bash)"
-    '';
   };
 
   programs.direnv = {
     enable = true;
+    enableBashIntegration = true;
     nix-direnv.enable = true;
   };
 
