@@ -31,6 +31,7 @@
         };
       editor.telescope.enable = true;
       ui.alpha.enable = true;
+      util.project.enable = true;
     };
   };
 }
