@@ -32,6 +32,8 @@
       editor.telescope.enable = true;
       ui.alpha.enable = true;
       util.project.enable = true;
+      coding.blink.enable = false;
+      coding.nvim-cmp.enable = true;
     };
   };
 }
