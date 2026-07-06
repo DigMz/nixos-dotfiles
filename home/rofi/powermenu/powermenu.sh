@@ -57,7 +57,7 @@ confirm_cmd() {
     -dmenu \
     -p 'Confirmation' \
     -mesg 'Are you Sure?' \
-    -theme powermenu/confirm_style.rasi
+    -theme ${HOME}/dotfiles/nixos/home/rofi/powermenu/confirm_style.rasi
 }
 
 # Ask for confirmation

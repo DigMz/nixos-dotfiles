@@ -48,8 +48,7 @@
 
     packages =
       with pkgs;
-      [ 
-        waydroid
+      [
         nixfmt
         statix
         discord
