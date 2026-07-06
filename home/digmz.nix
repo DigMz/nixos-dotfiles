@@ -34,7 +34,9 @@
 
     packages =
       with pkgs;
-      [ nixfmt
+      [ 
+        pywal16
+        nixfmt
         statix
         discord
       ]
