@@ -11,7 +11,8 @@ local wallpaper = wallpaper_dir .. "digital-render.jpg"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function()
-	-- hl.exec_cmd(terminal)
+  hl.exec_cmd("systemctl --user restart hypridle")
+  --
 	hl.exec_cmd("wayle shell")
 	hl.exec_cmd("wayle panel start")
 	hl.exec_cmd("awww-daemon")
