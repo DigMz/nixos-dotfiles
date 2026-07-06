@@ -35,8 +35,6 @@
     packages =
       with pkgs;
       [ 
-        jq
-        pywal16
         nixfmt
         statix
         discord
