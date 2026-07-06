@@ -12,6 +12,7 @@
     ./kitty
     ./wayle
     ./rofi
+    ./xdg
     ./lazyvim
   ];
 
@@ -35,7 +36,6 @@
     packages =
       with pkgs;
       [ 
-        appeditor
         nixfmt
         statix
         discord
