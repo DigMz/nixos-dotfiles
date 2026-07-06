@@ -10,6 +10,7 @@
   imports = [
     ./github-cli
     ./kitty
+    ./hypr
     ./wayle
     ./rofi
     ./xdg
