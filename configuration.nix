@@ -111,6 +111,7 @@
     brightnessctl
 
     gcc
+    gnumake
     cargo
     rustc
     rustPlatform.bindgenHook
