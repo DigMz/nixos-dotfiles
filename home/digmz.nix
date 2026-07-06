@@ -35,6 +35,7 @@
     packages =
       with pkgs;
       [ 
+        appeditor
         nixfmt
         statix
         discord
