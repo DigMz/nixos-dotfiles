@@ -52,9 +52,27 @@
     x11.enable = true;         # also needed so XWayland apps pick it up
   };
 
-  gtk.iconTheme = {
-    package = pkgs.kdePackages.breeze-icons;
-    name = "breeze";           # "breeze-dark" if you want the dark variant
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+  };
+
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.gnome-themes-extra;
+    };
+    iconTheme = {
+      package = pkgs.kdePackages.breeze-icons;
+      name = "breeze-dark";           # "breeze-dark" if you want the dark variant
+    };
+  };
+  qt = {
+    enable = true;
+    platformTheme.name = "adwaita";
+    style.name = "adwaita-dark";
   };
 
   home = {
