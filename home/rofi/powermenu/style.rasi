@@ -79,14 +79,14 @@ box {
 
 /*****----- User -----*****/
 userimage {
-    expand: false;
+    expand: true;
     width: 128px;
     height: 128px;
     // border: 0px;
     border-radius: 64px;
 
     background-color: transparent;
-    background-image: url("~/.config/rofi/images/user_icon.jpg", height);
+    background-image: url("~/dotfiles/nixos/home/rofi/images/user_icon.jpg", height);
 }
 
 /*****----- Inputbar -----*****/

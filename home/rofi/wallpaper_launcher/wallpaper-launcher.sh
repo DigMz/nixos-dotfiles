@@ -49,7 +49,7 @@ wall_selection=$(find "${wall_dir}" -maxdepth 1 -type f \( -iname "*.jpg" -o -in
 
 # Set the wallpaper
 [[ -n "$wall_selection" ]] || exit 1
-${HOME}/.config/rofi/wallpaper_launcher/change_wallpaper.sh ${wall_dir}${wall_selection}
+${HOME}/dotfiles/nixos/home/rofi/wallpaper_launcher/change_wallpaper.sh ${wall_dir}${wall_selection}
 # ${HOME}/.config/rofi/wallpaper_launcher/wallpaper-launcher.sh ${wall_dir}/${wall_selection}
 # swww img ${wall_dir}/${wall_selection}
 

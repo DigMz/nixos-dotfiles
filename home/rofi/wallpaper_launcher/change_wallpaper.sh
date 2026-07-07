@@ -29,7 +29,7 @@ awww img "$WALLPAPER" -t center
 # Restart Wayle panel
 wayle panel restart
 
-${HOME}/.config/hypr/scripts/pass_wal_colors.sh
+${HOME}/dotfiles/nixos/home/hypr/hypr/scripts/pass_wal_colors.sh
 hyprctl reload
 
 echo "Done."

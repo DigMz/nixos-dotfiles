@@ -144,6 +144,7 @@
 
     adwaita-icon-theme
 
+    ncdu
     kitty
     fastfetch
     btop
