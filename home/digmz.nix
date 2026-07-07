@@ -17,6 +17,7 @@
     ./lazyvim
   ];
 
+  # wallpaper-launcher only works with both hyprland and rofi
   xdg = {
     desktopEntries = {
       wallpaper_launcher = {
@@ -62,6 +63,13 @@
     packages =
       with pkgs;
       [
+        # Adding Dolphin with its dependencies
+        kdePackages.qtsvg
+        kdePackages.kio
+        kdePackages.kio-fuse
+        kdePackages.kio-extras
+        kdePackages.dolphin
+
         nixfmt
         statix
         discord
