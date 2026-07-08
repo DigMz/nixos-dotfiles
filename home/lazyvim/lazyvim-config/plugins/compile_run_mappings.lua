@@ -1,5 +1,5 @@
 local function open_terminal(cmd)
-  vim.cmd("w")
+  vim.cmd("wal")
   local width = math.floor(vim.o.columns * 0.9)
   local height = math.floor(vim.o.lines * 0.8)
   local row = math.floor((vim.o.lines - height) / 2)
