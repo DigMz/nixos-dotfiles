@@ -16,6 +16,7 @@
     ./xdg
     ./lazyvim
     ./quickshell
+    ./starship
   ];
 
   # wallpaper-launcher only works with both hyprland and rofi
