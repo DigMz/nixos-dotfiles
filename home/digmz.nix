@@ -93,6 +93,8 @@
         nixfmt
         statix
         discord
+
+        zoom-us
       ]
       ++ (with unstable; [
         tuxedo
