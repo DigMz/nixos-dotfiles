@@ -25,3 +25,4 @@ while IFS= read -r line; do
 done <"$input_file"
 
 echo "return colors"
+
