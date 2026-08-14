@@ -20,7 +20,9 @@ username=$(whoami)
 prompt="${username^^}"
 mesg="input"
 
-export WALLPAPER_PATH=$(awww query -j | jq '.[] | .[] | .displaying.image')
+export WALLPAPER_PATH=$(awww query -j | jq -r '.[] | .[] | .displaying.image' | head -n1)
+
+echo $WALLPAPER_PATH
 
 theme="${HOME}/dotfiles/nixos/home/rofi/powermenu/style.rasi"
 # theme="~/.cache/wal/colors-rofi-dark.rasi"
@@ -28,17 +30,16 @@ theme="${HOME}/dotfiles/nixos/home/rofi/powermenu/style.rasi"
 list_col=2
 list_row=3
 
-# Rofi CMD
 rofi_cmd() {
   rofi \
-    -theme-str "listview {columns: $list_col; lines: $list_row;}" \
-    -theme-str 'textbox-prompt-colon {str: " ";}' \
+    -theme-str "listview { columns: $list_col; lines: $list_row; }" \
+    -theme-str 'textbox-prompt-colon { str: " "; }' \
+    -theme-str "imagebox { background-image: url(\"$WALLPAPER_PATH\", height); }" \
     -dmenu \
     -p "$prompt" \
     -mesg "$mesg" \
     -markup-rows \
-    -theme ${theme}
-  # rofi -dmenu -p "$prompt" -mesg "$mesg" -markup-rows
+    -theme "$theme"
 }
 
 # Pass variables to rofi dmenu

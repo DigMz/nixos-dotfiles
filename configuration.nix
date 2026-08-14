@@ -76,10 +76,10 @@
       enable = true;
     };
 
-    xserver.enable = true;
+    # xserver.enable = true;
     displayManager.sddm = {
       enable = true;
-      wayland.enable = false;
+      wayland.enable = true;
 
       settings.Theme.CursorTheme = "Adwaita";
     };
@@ -94,6 +94,7 @@
     extraGroups = [
       "wheel" # Enable ‘sudo’ for the user.
       "networkmanager"
+      "video"
     ];
     packages = with pkgs; [
       tree
@@ -149,6 +150,10 @@
     kitty
     fastfetch
     btop
+    nvtopPackages.full
+    libva-utils
+    mesa-demos
+    vulkan-tools
     hyprshutdown
     wl-clipboard
     wl-clip-persist

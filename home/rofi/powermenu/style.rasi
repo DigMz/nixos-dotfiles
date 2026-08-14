@@ -2,7 +2,7 @@
 *
 *  Author : Aditya Shakya (adi1090x)
 *  Github : @adi1090x
-* 
+*
 *  Rofi Theme File
 *  Rofi Version: 1.7.3
 **/
@@ -65,7 +65,7 @@ imagebox {
     padding:                     100px;
     spacing:                     50px;
     background-color:            transparent;
-    background-image:            url(${WALLPAPER_PATH}, height);
+    background-image:            url("${WALLPAPER_PATH}", height);
     orientation:                 vertical;
     children:                    [ "box", "inputbar" ];
 }

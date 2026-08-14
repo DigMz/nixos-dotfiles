@@ -8,7 +8,7 @@
   programs.hyprshot.enable = true;
 
   xdg.configFile."hypr" = {
-    source = ./hypr;
+    source = ./config;
     recursive = true;
   };
 }

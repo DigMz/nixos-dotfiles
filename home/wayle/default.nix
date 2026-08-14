@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ mutagen ];
+  home.packages = with pkgs; [ mutagen libnotify ];
 
   services.wayle = {
     enable = true;
