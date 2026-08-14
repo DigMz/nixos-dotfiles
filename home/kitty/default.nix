@@ -5,7 +5,7 @@
     enable = true;
     font = {
       name = "DejaVuSansMono";
-      size = 14;
+      size = 16;
     };
     environment = {
       "EDITOR" = "nvim";

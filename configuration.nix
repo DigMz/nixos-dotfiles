@@ -61,6 +61,7 @@
     power-profiles-daemon.enable = true;
     upower.enable = true;
     blueman.enable = true;
+    udisks2.enable = true;
 
     # Enable CUPS to print documents.
     printing.enable = true;
@@ -77,16 +78,17 @@
       enable = true;
     };
 
+    xserver.enable = true;
     displayManager.sddm = {
       enable = true;
-      wayland.enable = true;
+      wayland.enable = false;
 
       settings.Theme.CursorTheme = "Adwaita";
     };
-  };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  services.libinput.enable = true;
+    # Enable touchpad support (enabled default in most desktopManager).
+    libinput.enable = true;
+  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.digmz = {
@@ -133,6 +135,7 @@
     direnv
     wget
     git
+    gh
     brightnessctl
 
     gcc
@@ -157,14 +160,15 @@
 
   environment.etc."wayland-sessions/hyprland-uwsm.desktop".enable = false;
 
-  programs.hyprland = {
-    enable = true;
-    withUWSM = false;
-    xwayland.enable = true;
+  programs = {
+    hyprland = {
+      enable = true;
+      withUWSM = false;
+      xwayland.enable = true;
+    };
+    steam.enable = true;
+    gamemode.enable = true;
   };
-
-  programs.steam.enable = true;
-  programs.gamemode.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
