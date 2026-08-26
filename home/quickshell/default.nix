@@ -24,6 +24,7 @@
         exec = "quickshell -c wallpaper_select";
         genericName = "wallpaper-launcher";
         name = "Wallpaper Launcher";
+        icon = "computer";
         terminal = false;
       };
 

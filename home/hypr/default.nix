@@ -14,5 +14,6 @@
 
   home.packages = with pkgs; [
     playerctl
+    hyprlandPlugins.hypr-dynamic-cursors
   ];
 }

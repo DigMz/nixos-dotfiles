@@ -16,6 +16,7 @@
     ./lazyvim
     ./quickshell
     ./starship
+    ./obsidian
   ];
 
   programs.bash = {
@@ -79,6 +80,7 @@
         nixfmt
         statix
         discord
+        prismlauncher
 
         zoom-us
       ]
