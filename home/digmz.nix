@@ -17,6 +17,7 @@
     ./quickshell
     ./starship
     ./obsidian
+    ./libreoffice
   ];
 
   programs.bash = {
@@ -81,6 +82,8 @@
         statix
         discord
         prismlauncher
+        krita
+        codex
 
         zoom-us
       ]

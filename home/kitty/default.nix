@@ -16,4 +16,12 @@
       background_blur = 32;
     };
   };
+
+  # Also set the default terminal application
+  xdg.desktopEntries.terminal = {
+    name = "Terminal";
+    type = "Application";
+    exec = "alacritty";  # or kitty, foot, etc.
+    categories = [ "System" "TerminalEmulator" ];
+  };
 }
