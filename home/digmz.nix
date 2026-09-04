@@ -29,8 +29,7 @@
       # Fix for Qt/KDE on Wayland
       QT_QPA_PLATFORM = "wayland";
       QT_AUTO_SCREEN_SCALE_FACTOR = "1";
-      # Timezone fallback (also fix system config below)
-      TZ = "US/Central";  # or your actual timezone
+      QT_QUICK_CONTROLS_STYLE = "Basic";
     };
   };
 
@@ -69,13 +68,22 @@
     enable = true;
     platformTheme.name = "kde";
     style = {
-      name = "breeze-dark";
+      name = "breeze";
       package = pkgs.kdePackages.breeze;
     };
   };
 
+
   home = {
     stateVersion = "26.05";
+
+    file.".local/share/color-schemes/BreezeDark.colors".source =
+      "${pkgs.kdePackages.breeze}/share/color-schemes/BreezeDark.colors";
+    file.".config/kdeglobals".source = 
+      pkgs.writeText "kdeglobals" ''
+        [General]
+        ColorScheme=BreezeDark
+      '';
 
     packages =
       with pkgs;
@@ -87,24 +95,13 @@
         kdePackages.kio-extras
         kdePackages.dolphin
 
-        # Adding Calender
-        kdePackages.akonadi
-        kdePackages.akonadi-calendar
-        kdePackages.akonadi-contacts
-        kdePackages.kdepim-runtime
-        kdePackages.pimcommon
-        kdePackages.merkuro
-
         kdePackages.ark
         kdePackages.kamoso
         ffmpeg
         kdePackages.kdenlive
         kdePackages.gwenview
-        kdePackages.kdeconnect-kde
-        kdePackages.partitionmanager
         kdePackages.kcalc
         kdePackages.krdc
-        kdePackages.kclock
 
         nixfmt
         statix

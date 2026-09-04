@@ -171,6 +171,15 @@
     };
     steam.enable = true;
     gamemode.enable = true;
+    kde-pim = {
+      enable = true;
+      kmail = true;
+      merkuro = true;
+      kontact = true;
+    };
+    kdeconnect.enable = true;
+    kclock.enable = true;
+    partition-manager.enable = true;
   };
 
   # Some programs need SUID wrappers, can be configured further or are
