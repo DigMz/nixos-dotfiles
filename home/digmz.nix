@@ -79,6 +79,17 @@
         kdePackages.kio-extras
         kdePackages.dolphin
 
+        kdePackages.ark
+        kdePackages.kamoso
+        kdePackages.kdenlive
+        kdePackages.gwenview
+        kdePackages.kdeconnect-kde
+        kdePackages.partitionmanager
+        kdePackages.kcalc
+        kdePackages.krdc
+        kdePackages.kclock
+        kdePackages.merkuro
+
         nixfmt
         statix
         discord
