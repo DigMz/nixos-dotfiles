@@ -7,6 +7,10 @@
     enable = true;
     defaultApplications = {
       "inode/directory" = "org.kde.dolphin.desktop";  # Dolphin for directories
+      "text/html" = "zen-browser.desktop";
+      "application/xhtml+xml" = "zen-browser.desktop";
+      "x-scheme-handler/http" = "zen-browser.desktop";
+      "x-scheme-handler/https" = "zen-browser.desktop";
     };
   };
 

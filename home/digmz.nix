@@ -13,6 +13,7 @@
     ./wayle
     ./rofi
     ./xdg
+    ./zen-browser
     ./lazyvim
     ./quickshell
     ./starship
