@@ -26,6 +26,11 @@
     sessionVariables = {
       EDITOR = "nvim";
       BROWSER = "zen";
+      # Fix for Qt/KDE on Wayland
+      QT_QPA_PLATFORM = "wayland";
+      QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+      # Timezone fallback (also fix system config below)
+      TZ = "US/Central";  # or your actual timezone
     };
   };
 
@@ -62,8 +67,11 @@
   };
   qt = {
     enable = true;
-    platformTheme.name = "adwaita";
-    style.name = "adwaita-dark";
+    platformTheme.name = "kde";
+    style = {
+      name = "breeze-dark";
+      package = pkgs.kdePackages.breeze;
+    };
   };
 
   home = {
@@ -79,8 +87,17 @@
         kdePackages.kio-extras
         kdePackages.dolphin
 
+        # Adding Calender
+        kdePackages.akonadi
+        kdePackages.akonadi-calendar
+        kdePackages.akonadi-contacts
+        kdePackages.kdepim-runtime
+        kdePackages.pimcommon
+        kdePackages.merkuro
+
         kdePackages.ark
         kdePackages.kamoso
+        ffmpeg
         kdePackages.kdenlive
         kdePackages.gwenview
         kdePackages.kdeconnect-kde
@@ -88,7 +105,6 @@
         kdePackages.kcalc
         kdePackages.krdc
         kdePackages.kclock
-        kdePackages.merkuro
 
         nixfmt
         statix
