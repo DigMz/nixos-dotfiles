@@ -29,7 +29,7 @@
       # Fix for Qt/KDE on Wayland
       QT_QPA_PLATFORM = "wayland";
       QT_AUTO_SCREEN_SCALE_FACTOR = "1";
-      QT_QUICK_CONTROLS_STYLE = "Basic";
+      # QT_QUICK_CONTROLS_STYLE = "Basic";
     };
   };
 
@@ -79,15 +79,21 @@
 
     file.".local/share/color-schemes/BreezeDark.colors".source =
       "${pkgs.kdePackages.breeze}/share/color-schemes/BreezeDark.colors";
-    file.".config/kdeglobals".source = 
-      pkgs.writeText "kdeglobals" ''
+    file.".config/kdeglobals".text = 
+      let
+        breezeDark = builtins.readFile "${pkgs.kdePackages.breeze}/share/color-schemes/BreezeDark.colors";
+      in
+      breezeDark + ''
+
         [General]
-        ColorScheme=BreezeDark
+        TerminalApplication=kitty
       '';
 
     packages =
       with pkgs;
       [
+        kdePackages.breeze
+
         # Adding Dolphin with its dependencies
         kdePackages.qtsvg
         kdePackages.kio

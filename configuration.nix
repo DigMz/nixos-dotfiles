@@ -163,6 +163,13 @@
 
   environment.etc."wayland-sessions/hyprland-uwsm.desktop".enable = false;
 
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      kdePackages.xdg-desktop-portal-kde
+    ];
+  };
+
   programs = {
     hyprland = {
       enable = true;

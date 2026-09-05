@@ -7,7 +7,22 @@
     enable = true;
     defaultApplications = {
       "inode/directory" = "org.kde.dolphin.desktop";  # Dolphin for directories
+
+      "application/x-terminal" = "kitty.desktop";
+
+      # Image viewers
+      "image/jpeg" = "org.kde.gwenview.desktop";
+      "image/png" = "org.kde.gwenview.desktop";
+      "image/webp" = "org.kde.gwenview.desktop";
+
+      # Text editors
+      "text/plain" = "neovim.desktop";
+      "text/x-shellscript" = "neovim.desktop";
+      "text/x-python" = "neovim.desktop";
+
+      # Default web browser
       "text/html" = "zen-browser.desktop";
+      "application/pdf" = "zen-browser.desktop"; # PDFs
       "application/xhtml+xml" = "zen-browser.desktop";
       "x-scheme-handler/http" = "zen-browser.desktop";
       "x-scheme-handler/https" = "zen-browser.desktop";
