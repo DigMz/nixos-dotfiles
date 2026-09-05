@@ -16,9 +16,9 @@
       "image/webp" = "org.kde.gwenview.desktop";
 
       # Text editors
-      "text/plain" = "neovim.desktop";
-      "text/x-shellscript" = "neovim.desktop";
-      "text/x-python" = "neovim.desktop";
+      "text/plain" = "nvim.desktop";
+      "text/x-shellscript" = "nvim.desktop";
+      "text/x-python" = "nvim.desktop";
 
       # Default web browser
       "text/html" = "zen-browser.desktop";
