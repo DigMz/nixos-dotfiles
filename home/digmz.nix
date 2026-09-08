@@ -93,6 +93,7 @@
       with pkgs;
       [
         kdePackages.breeze
+        kdePackages.kdepim-addons
 
         # Adding Dolphin with its dependencies
         kdePackages.qtsvg
@@ -114,12 +115,13 @@
         discord
         prismlauncher
         krita
-        codex
 
         zoom-us
       ]
       ++ (with unstable; [
         tuxedo
+
+        codex
       ])
       ++ [
         inputs.zen-browser.packages.${pkgs.system}.default

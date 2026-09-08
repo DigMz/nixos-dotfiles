@@ -178,12 +178,7 @@
     };
     steam.enable = true;
     gamemode.enable = true;
-    kde-pim = {
-      enable = true;
-      kmail = true;
-      merkuro = true;
-      kontact = true;
-    };
+    thunderbird.enable = true;
     kdeconnect.enable = true;
     kclock.enable = true;
     partition-manager.enable = true;
