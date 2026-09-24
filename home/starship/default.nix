@@ -59,7 +59,7 @@
       };
   
       username = {
-        show_always = false;
+        show_always = true;
         style_user = "bg:color_grey fg:color_fg0";
         style_root = "bg:color_grey fg:color_fg0";
         format = "[ $user ]($style)";
