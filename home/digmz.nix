@@ -92,6 +92,8 @@
     packages =
       with pkgs;
       [
+        claude-code
+
         kdePackages.breeze
         kdePackages.kdepim-addons
 

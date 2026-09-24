@@ -28,6 +28,7 @@
           clangd = langDefaults;
           cmake = langDefaults;
           python = langDefaults;
+          markdown = langDefaults;
         };
       editor.telescope.enable = true;
       ui.alpha.enable = true;
