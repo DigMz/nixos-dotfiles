@@ -118,6 +118,8 @@
         prismlauncher
         krita
 
+        obs-studio
+
         zoom-us
       ]
       ++ (with unstable; [
