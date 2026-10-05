@@ -205,6 +205,7 @@
     '';
     initExtra = pkgs.lib.mkOrder 2000 ''
       [[ ! ''${BLE_VERSION-} ]] || ble-attach
+      complete -o bashdefault -o default cargo
     '';
   };
 
